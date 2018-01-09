@@ -3,7 +3,8 @@ namespace app\index\controller;
 
 use think\Loader;
 use think\Controller;
-use think\db;
+//use think\db;
+use think\Db;
 
 class Index extends Controller
 {

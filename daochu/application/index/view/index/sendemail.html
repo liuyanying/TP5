@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<form action="{:url('Index/reg')}" method="post">
+    <label>邮箱：</label>
+    <input type="email" name="email" value=""/><br/>
+    <label>姓名：</label>
+    <input type="text" name="username" value=""/><br/>
+    <input type="submit" name="sub" value="注册"/>
+</form>
+</body>
+</html> -->
+
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <title>邮箱发送</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="/static/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="/static/css/animate-custom.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="codrops-top">
+                <div class="clr"></div>
+            </div>
+            <header>
+                <h1><span></span></h1>
+            </header>		
+			<div id="container_demo" >
+				<div id="wrapper">
+					<div id="login" class="animate form">
+						<form  action="{:url('Index/reg')}" method="post" autocomplete="on"> 
+							<h1>email</h1> 
+							<p> 
+								<label class="uname" data-icon="e"> Your email</label>
+								<input type="email" name="email" value="" placeholder="请输入正确的邮箱格式"/> 
+							</p>
+							<p> 
+								<label class="uname" data-icon="u">Your username</label>
+								<input type="text" name="username" value="" placeholder="请输入你的名字"/>
+							</p>
+							<p class="keeplogin"> 
+								<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+								<label for="loginkeeping">Keep me send in</label>
+							</p>
+							<p class="login button"> 
+								<input type="submit" value="send" /> 
+							</p>
+							<p class="change_link">
+								Not a member yet ?
+								<a class="to_register">Join us</a>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>  
+        </div>
+    </body>
+</html>
